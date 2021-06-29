@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    var liffId = "**********-********";
+    var liffId = "1656016086-VB5ZYQ95";
     initializeLiff(liffId);
 })
 
@@ -26,15 +26,11 @@ function sendText(text) {
 function sendMessages(text) {
     liff.sendMessages([{
         'type': 'text',
-        'text': "以下の内容で出勤状況修正依頼を受付けました。"
+        'text': "以下の内容でAPIキーを受信しました。"
     },{
         'type': 'text',
         'text': text
-    },{
-       "type": "sticker",
-       "packageId": "11537",
-       "stickerId": "52002739"
-   }]).then(function () {
+    }]).then(function () {
         liff.closeWindow();
     }).catch(function (error) {
         window.alert('Failed to send message ' + error);
