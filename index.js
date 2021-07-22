@@ -6,7 +6,7 @@ $(function () {
         var apisecret = $('input[name="apisecret"]').val();
         
         var msg = `APIキー送信フォーム\nAPI_KEY：${apikey}\nAPI_SECRET：${apisecret}`;
-        sendText(msg,apikey,apisecret);
+        sendText(msg);
 
         return false;
     });
