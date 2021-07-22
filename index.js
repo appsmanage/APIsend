@@ -1,5 +1,3 @@
-var params = (new URL(document.location)).searchParams;
-var key = params.get('key');
 
 $(function () {
     // 送信
